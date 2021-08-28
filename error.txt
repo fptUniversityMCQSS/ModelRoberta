@@ -1,0 +1,20 @@
+08/27/2021 20:46:37 - INFO - farm.modeling.prediction_head -   Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .
+Traceback (most recent call last):
+  File "/app/main.py", line 10, in <module>
+    from entity.result import solve_question
+  File "/app/entity/result.py", line 24, in <module>
+    pipe = get_pipeline()
+  File "/app/model/pipeline.py", line 21, in get_pipeline
+    document_store = load_document_store(delete_all_document=False)
+  File "/app/model/preprocessing.py", line 67, in load_document_store
+    document_store = MilvusDocumentStore(
+  File "/usr/local/lib/python3.9/site-packages/haystack/document_store/milvus.py", line 133, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.9/site-packages/haystack/document_store/sql.py", line 98, in __init__
+    engine = create_engine(url)
+  File "<string>", line 2, in create_engine
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 520, in create_engine
+    u, plugins, kwargs = u._instantiate_plugins(kwargs)
+AttributeError: 'NoneType' object has no attribute '_instantiate_plugins'

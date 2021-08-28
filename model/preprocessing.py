@@ -65,7 +65,7 @@ def load_document(dir_file, pattern):
 def load_document_store(delete_all_document):
     
     document_store = MilvusDocumentStore(
-        sql_url=os.getenv('PROCESSED_DOCUMENTS_DB'),
+        # sql_url=os.getenv('PROCESSED_DOCUMENTS_DB'),
         milvus_url="tcp://localhost:19530",
         connection_pool="SingletonThread",
         similarity="dot_product",

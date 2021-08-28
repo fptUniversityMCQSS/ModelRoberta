@@ -73,6 +73,3 @@ def qa_res():
 
     return app.response_class(stream_with_context(question_respond()))
 
-
-if __name__ == '__main__':
-    app.run(port=5000)
