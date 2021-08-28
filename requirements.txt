@@ -96,7 +96,7 @@ pycodestyle
 pycparser
 pydantic
 Pygments
-pymilvus
+pymilvus==1.0.1
 pyparsing
 pyrsistent
 python-dateutil
